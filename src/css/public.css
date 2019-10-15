@@ -1,0 +1,255 @@
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 "微软雅黑", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+address,
+cite,
+dfn,
+em,
+var,
+i {
+  font-style: normal;
+}
+
+img {
+  border: 0 none;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+input,
+textarea {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #777;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #ee394b;
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.tc {
+  text-align: center;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+
+.fr {
+  float: right;
+}
+
+.dn {
+  display: none !important;
+}
+
+.vh {
+  visibility: hidden;
+}
+.pr {
+  position: relative;
+}
+.o0 {
+  opacity: 0;
+}
+.o1 {
+  opacity: 1;
+}
+/* 页底 */
+
+/* 页底 */
+
+/* 页底 */
+
+.mod_footer_icons_ListBox {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+/* 第一栏 */
+
+.footer_icons_List:first-child {
+  height: 138px;
+}
+
+.footer_icons_List {
+  width: 1200px;
+  margin: 0 auto;
+  height: 185px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer_icons_List .icons_list {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_icons_List .iconbox {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.footer_icons_List .iconImg {
+  width: 70px;
+  height: 70px;
+  margin: 34px 0 34px 43px;
+  float: left;
+}
+
+.footer_icons_List .iconText {
+  margin-left: 18px;
+  float: left;
+  margin-top: 48px;
+}
+
+/* 第二栏 */
+
+.footer_icons_List_second {
+  width: 1200px;
+  height: 126px;
+  margin: 30px auto 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer_icons_List .iconText {
+  margin-left: 18px;
+  float: left;
+  margin-top: 48px;
+}
+
+.codeBox {
+  display: inline-block;
+  float: left;
+  width: 400px;
+  height: 100%;
+}
+
+.codeNarrate {
+  float: left;
+  width: 270px;
+  margin-left: 10px;
+}
+
+.footer_icons_List_second .footer_explain_first {
+  color: #333;
+  font-size: 18px;
+  padding-bottom: 10px;
+  line-height: 20px;
+  display: block;
+}
+
+.footer_icons_List_second .footer_explain_other {
+  color: #333;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 6px;
+  display: block;
+}
+
+/* 第三栏 */
+
+.footer_codes_List {
+  width: 1200px;
+  margin: 0 auto;
+  height: 120px;
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+
+.codeImg {
+  float: left;
+  width: 120px;
+  height: 100%;
+}
+
+.codeNarrate h1 {
+  color: #333;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.codeNarrate p {
+  color: #666;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/*  */
+
+.mod_footer_links {
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 36px;
+  position: relative;
+  background: #f5f5f5;
+}
+
+.qypage-1200 .mod_footer_links .ftcont {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mod_footer_links .clearfix {
+  color: #333;
+}
+
+.mod_footer_links .ftList li {
+  display: inline;
+  float: left;
+  margin-right: 5px;
+}
+
+.qypage-1200 .ftList li {
+  margin-right: 55px;
+}
+
+.mod_footer_links .ftList .last {
+  margin-right: 0;
+}
+
+.mod_footer_links .footmenu {
+  padding: 5px 0 10px 0;
+  text-align: center;
+}
+
+.mod_footer_links .footmenu a {
+  color: #333;
+}
+
+.mod_footer_links .cutline {
+  margin: 0 5px;
+  color: #333;
+}
+
+.mod_footer_links .copyright {
+  text-align: center;
+}
