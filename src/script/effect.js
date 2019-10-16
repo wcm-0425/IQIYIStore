@@ -1,5 +1,6 @@
 require(['config'], function () {
     require(['jquery'], function () {
+        // 主页轮播图
         class IndexBanner {
 
             constructor() {
@@ -95,7 +96,7 @@ require(['config'], function () {
             lunbo() {
                 this.ban_items.children().eq(this.index).stop(true, true).animate({
                     opacity: 1
-                },800).siblings().stop(true, true).animate({
+                }, 800).siblings().stop(true, true).animate({
                     opacity: 0
                 }, 800)
                 this.banbtns.eq(this.index).addClass('active').siblings().removeClass('active')
@@ -110,7 +111,70 @@ require(['config'], function () {
 
         }
 
-        new IndexBanner().init()
+        new IndexBanner().init();
+        // 楼梯效果
+        class stairs {
+            constructor() {
+                this.stairs = $('.stairs')
+                this.sStairs = $('.sStairs')
+                this.floor = $('.floor')
+                this.toTop = $('.baseToTop')
+            }
+            init() {
+                let _this = this
+                let $top = $(window).scrollTop();//获取当前的scrollTop值
 
-    })
+                if ($top >= 100) {
+                    _this.stairs.show()
+                } else {
+                    _this.stairs.hide()
+                }
+
+                $(window).on('scroll', function () {
+                    let $top = $(this).scrollTop()
+                    if ($top >= 100) {
+                        _this.stairs.show()
+                    } else {
+                        _this.stairs.hide()
+                    }
+                    // 4.拖动滚轮，楼梯和楼层对应
+                    // 利用楼层的top值进行判断。
+                    _this.floor.each(function (index, element) {
+
+                        let $loucengtop = _this.floor.eq(index).offset().top + $(element).height() - 200;
+
+                        console.log($loucengtop)
+
+                        if ($loucengtop > $top) {
+                            _this.sStairs.removeClass('active');
+                            _this.sStairs.eq(index).addClass('active');
+                            // console.log(_this.sStairs.eq(index).index())
+                            return false;
+                        }
+                    });
+                })
+
+               
+
+                // 点击跳转
+                this.sStairs.on('click', function () {
+                    $(this).addClass('active').siblings().not('.feedback').not('.baseToTop').removeClass('active')
+                    let $fTop = _this.floor.eq($(this).index() - 1).offset().top
+                    $('html, body').animate({
+                        scrollTop: $fTop
+                    })
+                })
+                // 回到顶部
+                this.toTop.on('click', function () {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    })
+                })
+            }
+        }
+
+        new stairs().init()
+
+    });
+
 })

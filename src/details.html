@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/details.css">
+    <script src="script/require.js" defer async="true" data-main="script/main.js"></script>
+
 </head>
 
 <body class="details">
@@ -217,16 +219,18 @@
             <!-- 左侧 -->
             <div class="mod-preview">
                 <div class="preview-pic">
-
+                    <div class="image-zoom-wrap">
+                        <img src="" alt="">
+                        <span class="image-zoom"></span>
+                    </div>
+                    <div class="image-retina">
+                        <img style=" position: absolute; left: -380px; top: -380px;" src="" alt="">
+                    </div>
                 </div>
                 <div class="preview-thumbnail">
                     <div class="preview-thumbnail-inner">
                         <ul class="thumbnail-item">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+
                         </ul>
                     </div>
                 </div>
@@ -238,7 +242,29 @@
                 <div class="detail-title">
                     <h3>掌上游戏机400种经典怀旧FC掌上游戏迷你儿童游戏掌机</h3>
                 </div>
-                <div class="detail-price"></div>
+                <div class="detail-price">
+
+                    <div class="shopPromo_panel" style="z-index:1">
+                        <div class="shopPromo_panel pt5" style="z-index:1">
+                            <label class="detail_metatit">促&nbsp;销&nbsp;价：</label>
+                            <div class="shopTitle_info">
+                                <div class="promo_price">
+                                    <span class="price-now">
+                                        <em class="tm-yen">¥</em>
+                                        <strong class="tm-price" id="J_new-price">49.8</strong>
+                                    </span>
+                                    <em class="tm-promo-type"><i></i>促销价</em>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shopPromo_panel">
+                            <label class="detail_metatit">价&nbsp;&nbsp;&nbsp;&nbsp;格：</label>
+                            <div class="shopTitle_info">
+                                <span class="price-old">¥<span id="J_old-price">198</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!--  -->
                 <ul class="detail-ind-panel">
@@ -543,7 +569,7 @@
                                             <span class="amount-decrease amount-decrease-no"
                                                 data-disabledclass="amount-decrease-no"
                                                 data-shopcart-type="minus"></span>
-                                        </span><span class="amount-unit">件</span>
+                                        </span><span class="amount-unit"> </span>
                                         <em style="display:none;" id="J_EmStock" data-max-quantity="2904"
                                             class="tb-hidden">库存2904件</em>
                                     </span>
@@ -622,7 +648,7 @@
                     </div>
                 </div>
 
-           
+
             </div>
 
         </div>

@@ -1158,3 +1158,48 @@
   -o-transition: -o-transform 0.7s ease;
   transition: transform 0.7s ease;
 }
+
+/* 楼梯 */
+.stairs {
+  position: fixed;
+  width: 36px;
+  height: 250px;
+  left: 1561.5px;
+  bottom: 10px;
+  z-index: 10;
+  display: none;
+}
+.stairs_item {
+  width: 36px;
+}
+
+.tomrjx,
+.tojrjx,
+.toppjx {
+  display: block;
+  width: 36px;
+  height: 40px;
+  background: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.baseToTop,
+.feedback {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/baseRedScrollBar.png);
+  cursor: pointer;
+}
+.baseToTop {
+  background-position: -50px -46px;
+}
+.feedback {
+  background-position: -50px -82px;
+  margin-bottom: 10px;
+}
+
+.stairs .active {
+  background: wheat;
+}

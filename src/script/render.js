@@ -27,7 +27,7 @@ require(['config'], function () {
         jxrender: (function () {
             const $jx_item = $('.mod-new-model-content .tchoiceness-productList')
             $.ajax({
-                type: 'get',
+                type: 'post',
                 url: 'http://10.31.155.18/IQIYIStore/php/jxdata.php',
                 async: true,
                 dataType: 'json',
@@ -38,7 +38,7 @@ require(['config'], function () {
                         strhtml += `
                         <li>
                         <div class="tchoiceness-product">
-                            <a class="tchoiceness-productPic" style="display:block !important;" target="_blank">
+                            <a href="http://10.31.155.18/IQIYIStore/src/details.html?sid=${value.sid}" class="tchoiceness-productPic" style="display:block !important;" target="_blank">
                                 <img alt="jrjxPic"
                                     src="${value.url}"
                                     width="140" height="140">
